@@ -46,10 +46,6 @@ cmd/cmd
 
 cmd/lncli/lncli
 
-# Files from mobile build.
-mobile/build
-mobile/*_generated.go
-
 # vim
 *.swp
 
