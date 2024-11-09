@@ -1,3 +1,9 @@
+## Purpose of This Fork
+
+This fork is designed to support `lndmobile` for integration and packaging as part of a mobile SDK through third-party imports.
+
+The original repository included the generated code files `mobile/*._generated.go` and `mobile/build` in the `.gitignore` file. We have removed these entries from the ignore list and will execute the packaging process once, uploading the generated files to the repository.
+
 ## Lightning Network Daemon
 
 [![Release build](https://github.com/lightningnetwork/lnd/actions/workflows/release.yaml/badge.svg)](https://github.com/lightningnetwork/lnd/actions/workflows/release.yaml)
