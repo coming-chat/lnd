@@ -4,6 +4,22 @@ This fork is designed to support `lndmobile` for integration and packaging as pa
 
 The original repository included the generated code files `mobile/*._generated.go` and `mobile/build` in the `.gitignore` file. We have removed these entries from the ignore list and will execute the packaging process once, uploading the generated files to the repository.
 
+## Usage
+
+1. install 
+
+```shell
+> go get github.com/lightningnetwork/lnd@v0.18.3-beta
+> go get github.com/lightningnetwork/lnd/sqldb@v1.0.5
+```
+
+2. `go.mod` replace 
+
+```go
+replace github.com/lightningnetwork/lnd => github.com/coming-chat/lnd v0.18.3-beta.coming
+replace google.golang.org/protobuf => github.com/lightninglabs/protobuf-go-hex-display v1.30.0-hex-display
+```
+
 ## Lightning Network Daemon
 
 [![Release build](https://github.com/lightningnetwork/lnd/actions/workflows/release.yaml/badge.svg)](https://github.com/lightningnetwork/lnd/actions/workflows/release.yaml)
