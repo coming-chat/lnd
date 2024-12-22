@@ -15,7 +15,7 @@ function generate() {
     echo "Generating protos from ${file}, into ${DIRECTORY}"
 
     # Generate the protos.
-    protoc -I/usr/local/include -I. \
+    protoc --swift_out=. -I/usr/local/include -I. \
       --go_out . --go_opt paths=source_relative \
       --go-grpc_out . --go-grpc_opt paths=source_relative \
       "${file}"
