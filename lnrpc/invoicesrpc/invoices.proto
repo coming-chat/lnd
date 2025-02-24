@@ -241,7 +241,7 @@ message HtlcModifyResponse {
     // value can be different from the actual on-chain HTLC amount, in case the
     // HTLC carries other valuable items, as can be the case with custom channel
     // types.
-    optional uint64 amt_paid = 2;
+    uint64 amt_paid = 2;
 
     // This flag indicates whether the HTLCs associated with the invoices should
     // be cancelled. The interceptor client may set this field if some
